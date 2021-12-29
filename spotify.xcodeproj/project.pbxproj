@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32AFC23277C295000539F9E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D32AFC22277C295000539F9E /* Alamofire */; };
+		D32AFC28277C2CD300539F9E /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC27277C2CD300539F9E /* UserAuth.swift */; };
+		D32AFC2B277C30F900539F9E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC2A277C30F900539F9E /* AuthManager.swift */; };
+		D32AFC2D277C3A6300539F9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */; };
+		D32AFC2F277C3AB100539F9E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */; };
+		D32AFC31277C3ABC00539F9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC30277C3ABC00539F9E /* SearchViewController.swift */; };
 		D353D87127480810009D26F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87027480810009D26F0 /* AppDelegate.swift */; };
 		D353D87327480810009D26F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87227480810009D26F0 /* SceneDelegate.swift */; };
-		D353D87527480810009D26F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87427480810009D26F0 /* ViewController.swift */; };
+		D353D87527480810009D26F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87427480810009D26F0 /* HomeViewController.swift */; };
 		D353D87827480810009D26F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353D87627480810009D26F0 /* Main.storyboard */; };
 		D353D87A27480812009D26F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D353D87927480812009D26F0 /* Assets.xcassets */; };
 		D353D87D27480812009D26F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353D87B27480812009D26F0 /* LaunchScreen.storyboard */; };
@@ -19,10 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32AFC27277C2CD300539F9E /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		D32AFC2A277C30F900539F9E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		D32AFC30277C3ABC00539F9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D353D86D27480810009D26F0 /* spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D353D87027480810009D26F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D353D87227480810009D26F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D353D87427480810009D26F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D353D87427480810009D26F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D353D87727480810009D26F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D353D87927480812009D26F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D353D87C27480812009D26F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32AFC23277C295000539F9E /* Alamofire in Frameworks */,
 				D3CA2527277B871D00F1D565 /* FirebaseAuth in Frameworks */,
 				D3CA2529277B871D00F1D565 /* FirebaseFirestore in Frameworks */,
 			);
@@ -43,6 +55,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D32AFC24277C2C0B00539F9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D32AFC27277C2CD300539F9E /* UserAuth.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D32AFC25277C2C6600539F9E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D32AFC26277C2C7300539F9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D353D87427480810009D26F0 /* HomeViewController.swift */,
+				D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */,
+				D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */,
+				D32AFC30277C3ABC00539F9E /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D32AFC29277C30E500539F9E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D32AFC2A277C30F900539F9E /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D353D86427480810009D26F0 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +108,12 @@
 		D353D86F27480810009D26F0 /* spotify */ = {
 			isa = PBXGroup;
 			children = (
+				D32AFC29277C30E500539F9E /* Managers */,
+				D32AFC26277C2C7300539F9E /* View */,
+				D32AFC25277C2C6600539F9E /* Presenter */,
+				D32AFC24277C2C0B00539F9E /* Model */,
 				D353D87027480810009D26F0 /* AppDelegate.swift */,
 				D353D87227480810009D26F0 /* SceneDelegate.swift */,
-				D353D87427480810009D26F0 /* ViewController.swift */,
 				D353D87627480810009D26F0 /* Main.storyboard */,
 				D3CA2523277B838E00F1D565 /* GoogleService-Info.plist */,
 				D353D87927480812009D26F0 /* Assets.xcassets */,
@@ -93,6 +142,7 @@
 			packageProductDependencies = (
 				D3CA2526277B871D00F1D565 /* FirebaseAuth */,
 				D3CA2528277B871D00F1D565 /* FirebaseFirestore */,
+				D32AFC22277C295000539F9E /* Alamofire */,
 			);
 			productName = spotify;
 			productReference = D353D86D27480810009D26F0 /* spotify.app */;
@@ -124,6 +174,7 @@
 			mainGroup = D353D86427480810009D26F0;
 			packageReferences = (
 				D3CA2525277B871D00F1D565 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D32AFC21277C294F00539F9E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D353D86E27480810009D26F0 /* Products */;
 			projectDirPath = "";
@@ -153,9 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D353D87527480810009D26F0 /* ViewController.swift in Sources */,
+				D353D87527480810009D26F0 /* HomeViewController.swift in Sources */,
 				D353D87127480810009D26F0 /* AppDelegate.swift in Sources */,
+				D32AFC31277C3ABC00539F9E /* SearchViewController.swift in Sources */,
+				D32AFC28277C2CD300539F9E /* UserAuth.swift in Sources */,
 				D353D87327480810009D26F0 /* SceneDelegate.swift in Sources */,
+				D32AFC2F277C3AB100539F9E /* LibraryViewController.swift in Sources */,
+				D32AFC2D277C3A6300539F9E /* TabBarViewController.swift in Sources */,
+				D32AFC2B277C30F900539F9E /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +366,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,6 +395,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,7 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -377,6 +435,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D32AFC21277C294F00539F9E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
 		D3CA2525277B871D00F1D565 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -388,6 +454,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D32AFC22277C295000539F9E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32AFC21277C294F00539F9E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		D3CA2526277B871D00F1D565 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D3CA2525277B871D00F1D565 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
