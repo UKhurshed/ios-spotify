@@ -13,6 +13,11 @@
 		D32AFC2D277C3A6300539F9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */; };
 		D32AFC2F277C3AB100539F9E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */; };
 		D32AFC31277C3ABC00539F9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC30277C3ABC00539F9E /* SearchViewController.swift */; };
+		D32AFC35277C450900539F9E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC34277C450900539F9E /* AuthViewController.swift */; };
+		D32AFC37277C4A1C00539F9E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32AFC36277C4A1C00539F9E /* HomeViewController.xib */; };
+		D32AFC3A277C4C4600539F9E /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC38277C4C4600539F9E /* GreetingViewController.swift */; };
+		D32AFC3B277C4C4600539F9E /* GreetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32AFC39277C4C4600539F9E /* GreetingViewController.xib */; };
+		D32AFC43277CAC1000539F9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC42277CAC1000539F9E /* Extensions.swift */; };
 		D353D87127480810009D26F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87027480810009D26F0 /* AppDelegate.swift */; };
 		D353D87327480810009D26F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87227480810009D26F0 /* SceneDelegate.swift */; };
 		D353D87527480810009D26F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87427480810009D26F0 /* HomeViewController.swift */; };
@@ -30,6 +35,11 @@
 		D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		D32AFC30277C3ABC00539F9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D32AFC34277C450900539F9E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		D32AFC36277C4A1C00539F9E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D32AFC38277C4C4600539F9E /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		D32AFC39277C4C4600539F9E /* GreetingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingViewController.xib; sourceTree = "<group>"; };
+		D32AFC42277CAC1000539F9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D353D86D27480810009D26F0 /* spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D353D87027480810009D26F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D353D87227480810009D26F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,10 +83,11 @@
 		D32AFC26277C2C7300539F9E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D353D87427480810009D26F0 /* HomeViewController.swift */,
+				D32AFC41277CA73A00539F9E /* Auth */,
+				D32AFC40277CA72000539F9E /* Home */,
+				D32AFC3F277CA70F00539F9E /* Search */,
+				D32AFC3E277CA70400539F9E /* Library */,
 				D32AFC2C277C3A6300539F9E /* TabBarViewController.swift */,
-				D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */,
-				D32AFC30277C3ABC00539F9E /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +98,41 @@
 				D32AFC2A277C30F900539F9E /* AuthManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D32AFC3E277CA70400539F9E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D32AFC2E277C3AB100539F9E /* LibraryViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D32AFC3F277CA70F00539F9E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D32AFC30277C3ABC00539F9E /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D32AFC40277CA72000539F9E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D353D87427480810009D26F0 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D32AFC41277CA73A00539F9E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D32AFC34277C450900539F9E /* AuthViewController.swift */,
+				D32AFC36277C4A1C00539F9E /* HomeViewController.xib */,
+				D32AFC38277C4C4600539F9E /* GreetingViewController.swift */,
+				D32AFC39277C4C4600539F9E /* GreetingViewController.xib */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		D353D86427480810009D26F0 = {
@@ -119,6 +165,7 @@
 				D353D87927480812009D26F0 /* Assets.xcassets */,
 				D353D87B27480812009D26F0 /* LaunchScreen.storyboard */,
 				D353D87E27480812009D26F0 /* Info.plist */,
+				D32AFC42277CAC1000539F9E /* Extensions.swift */,
 			);
 			path = spotify;
 			sourceTree = "<group>";
@@ -192,8 +239,10 @@
 			files = (
 				D353D87D27480812009D26F0 /* LaunchScreen.storyboard in Resources */,
 				D353D87A27480812009D26F0 /* Assets.xcassets in Resources */,
+				D32AFC37277C4A1C00539F9E /* HomeViewController.xib in Resources */,
 				D3CA2524277B838E00F1D565 /* GoogleService-Info.plist in Resources */,
 				D353D87827480810009D26F0 /* Main.storyboard in Resources */,
+				D32AFC3B277C4C4600539F9E /* GreetingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,11 +255,14 @@
 			files = (
 				D353D87527480810009D26F0 /* HomeViewController.swift in Sources */,
 				D353D87127480810009D26F0 /* AppDelegate.swift in Sources */,
+				D32AFC35277C450900539F9E /* AuthViewController.swift in Sources */,
+				D32AFC3A277C4C4600539F9E /* GreetingViewController.swift in Sources */,
 				D32AFC31277C3ABC00539F9E /* SearchViewController.swift in Sources */,
 				D32AFC28277C2CD300539F9E /* UserAuth.swift in Sources */,
 				D353D87327480810009D26F0 /* SceneDelegate.swift in Sources */,
 				D32AFC2F277C3AB100539F9E /* LibraryViewController.swift in Sources */,
 				D32AFC2D277C3A6300539F9E /* TabBarViewController.swift in Sources */,
+				D32AFC43277CAC1000539F9E /* Extensions.swift in Sources */,
 				D32AFC2B277C30F900539F9E /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

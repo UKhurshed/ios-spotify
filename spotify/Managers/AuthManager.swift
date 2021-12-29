@@ -17,4 +17,43 @@ final class AuthManager{
     
     private init() {}
     
+    public var signInUrl: URL? {
+        let base = "https://accounts.spotify.com/authorize"
+        let scope = "user-read-private"
+        let redirectUrl = "https://www.spotify.com"
+        let str = "\(base)?response_type=code&client_id=\(Constants.clientID)&scope=\(scope)&redirect_uri=\(redirectUrl)&show_dialog=TRUE"
+        return URL(string: str)
+    }
+    
+    var isSignedIn: Bool{
+        return false
+    }
+    
+    private var accessToken: String?{
+        return nil
+    }
+    
+    private var refreshToken: String?{
+        return nil
+    }
+    
+    private var tokenExpirationDate: Date?{
+        return nil
+    }
+    
+    private var shouldRefreshToken: Bool{
+        return false
+    }
+    
+    public func exchangeCodeForToken(code: String, completion: @escaping ((Bool) -> Void)){
+        
+    }
+    
+    public func refreshAccessToken(){
+        
+    }
+    
+    public func cacheToken(){
+        
+    }
 }
