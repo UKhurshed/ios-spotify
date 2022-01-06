@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,9 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
-        print(AuthManager.shared.signInUrl?.absoluteString)
+        AuthManager.shared.refreshIfNeeded{ success in
+            debugPrint("Success: \(success)")
+        }
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         return true
     }
 

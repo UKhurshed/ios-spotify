@@ -18,6 +18,7 @@
 		D32AFC3A277C4C4600539F9E /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC38277C4C4600539F9E /* GreetingViewController.swift */; };
 		D32AFC3B277C4C4600539F9E /* GreetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32AFC39277C4C4600539F9E /* GreetingViewController.xib */; };
 		D32AFC43277CAC1000539F9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC42277CAC1000539F9E /* Extensions.swift */; };
+		D32AFC45277D7E6D00539F9E /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32AFC44277D7E6D00539F9E /* AuthResponse.swift */; };
 		D353D87127480810009D26F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87027480810009D26F0 /* AppDelegate.swift */; };
 		D353D87327480810009D26F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87227480810009D26F0 /* SceneDelegate.swift */; };
 		D353D87527480810009D26F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353D87427480810009D26F0 /* HomeViewController.swift */; };
@@ -40,6 +41,7 @@
 		D32AFC38277C4C4600539F9E /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		D32AFC39277C4C4600539F9E /* GreetingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingViewController.xib; sourceTree = "<group>"; };
 		D32AFC42277CAC1000539F9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D32AFC44277D7E6D00539F9E /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		D353D86D27480810009D26F0 /* spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D353D87027480810009D26F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D353D87227480810009D26F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D32AFC27277C2CD300539F9E /* UserAuth.swift */,
+				D32AFC44277D7E6D00539F9E /* AuthResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D353D87427480810009D26F0 /* HomeViewController.swift */,
+				D32AFC36277C4A1C00539F9E /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -128,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				D32AFC34277C450900539F9E /* AuthViewController.swift */,
-				D32AFC36277C4A1C00539F9E /* HomeViewController.xib */,
 				D32AFC38277C4C4600539F9E /* GreetingViewController.swift */,
 				D32AFC39277C4C4600539F9E /* GreetingViewController.xib */,
 			);
@@ -263,6 +266,7 @@
 				D32AFC2F277C3AB100539F9E /* LibraryViewController.swift in Sources */,
 				D32AFC2D277C3A6300539F9E /* TabBarViewController.swift in Sources */,
 				D32AFC43277CAC1000539F9E /* Extensions.swift in Sources */,
+				D32AFC45277D7E6D00539F9E /* AuthResponse.swift in Sources */,
 				D32AFC2B277C30F900539F9E /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
